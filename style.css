@@ -1,13 +1,19 @@
 body {
-    background-color: #007AFF !important;
+    background-color: black !important;   
+    overflow: hidden;     
+}
+
+.container-fluid {    
+    justify-content: center !important;
+    border: 1px solid black;   
 }
 
 .container {
     min-height: 100vh;
-    background-color: #007AFF !important;
+    background-color: black !important;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
 }
 
 .quiz-card {
@@ -29,4 +35,23 @@ body {
 
 .bg-success, .bg-danger {
     color: white !important;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.final-headline {
+    font-size: 38px;
+    margin-bottom: 32px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
 }
