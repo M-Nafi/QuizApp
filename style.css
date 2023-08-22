@@ -25,18 +25,19 @@ body {
     padding-right: 16px !important;
     display: flex !important;
     background-color: rgb(29, 28, 87);
-    height: 100px;
+    height: auto;
     width: auto;
     border-bottom: 0;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     justify-content: space-between !important;
     align-items: center !important;
-    flex-direction: row-reverse;    
+    flex-direction: row-reverse;     
 }
 
-p {
-    color: white;
+p {    
+    margin-bottom: 0 !important;
+    color: white;    
 }
 
 p:hover {
@@ -48,9 +49,9 @@ p:hover {
 
 .navigation {
     display: flex;
-    align-items: center;
+    align-items: center;    
     gap: 20px;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 .quiz-card {
@@ -92,4 +93,14 @@ p:hover {
     display: flex;
     justify-content: center;
     margin-top: 24px;
+}
+
+@media (max-width: 350px) {
+    .navbar {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column-reverse;
+    gap: 16px;
+    
+    }
 }
