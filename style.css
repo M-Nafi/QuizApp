@@ -1,5 +1,5 @@
 body {
-    background-color: black !important;   
+    background-color: lightgray !important; 
     overflow: hidden;     
 }
 
@@ -10,14 +10,52 @@ body {
 
 .container {
     min-height: 100vh;
-    background-color: black !important;
+    background-color: lightgray !important;
     display: flex;
     align-items: center;
     justify-content: center;   
 }
 
+.quizlogo {
+    width: 75px;
+}
+
+.navbar {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    display: flex !important;
+    background-color: rgb(29, 28, 87);
+    height: 100px;
+    width: auto;
+    border-bottom: 0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-direction: row-reverse;    
+}
+
+p {
+    color: white;
+}
+
+p:hover {
+    color: lightblue !important;
+    border-bottom: 3px solid;
+    transition: all 100ms;
+    padding-bottom: 7px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
 .quiz-card {
     width: 30rem;
+    border-top: 0 !important; 
 }
 
 .question-footer {

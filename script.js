@@ -58,15 +58,14 @@ function init() {
 function showQuestion() {
   if (gameIsOver()) {
     showEndScreen();
-  } else {
-    
+  } else {    
     updateToNextQuestion();
   }
 }
 
 
 function gameIsOver() {
-  return currentQuestion >= questions.length;  // ">=" heisst = grösser oder gleich
+  return currentQuestion >= questions.length;  
 }
 
 
@@ -90,7 +89,7 @@ function updateProgressBar() {
 
 function updateToNextQuestion() {
   let question = questions[currentQuestion];
-  document.getElementById("question-number").innerHTML = currentQuestion + 1; // für die zahl unten auf der seite
+  document.getElementById("question-number").innerHTML = currentQuestion + 1; // zahl unten auf der seite
   document.getElementById("questiontext").innerHTML = question["question"];
   document.getElementById("answer_1").innerHTML = question["answer_1"];
   document.getElementById("answer_2").innerHTML = question["answer_2"];
